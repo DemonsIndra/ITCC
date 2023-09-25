@@ -121,7 +121,7 @@ ul li a.active{
     color: var(--black-color);
 }
 
-.search-bar input[type="search"]{
+.search-bar input{
     height: 48px;
     width: 400px;
     border-radius: 12px;
@@ -160,6 +160,10 @@ ul li a.active{
     font-weight: 600;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .description{
     color: var(--gray-color);
     margin-top: 10px;
@@ -183,7 +187,7 @@ ul li a.active{
 
 .services{
     padding-top: 30px;
-    background: lightsteelblue;
+    background: #F8F8FD;
 }
 
 .row-services{
@@ -277,7 +281,7 @@ ul li a.active{
 /* footer */
 
 footer{
-    background-color: rgb(57, 57, 216);
+    background-color: #034078;
     padding-top: 80px;
 }
 
@@ -324,6 +328,11 @@ footer button a{
     padding-bottom: 50px;
 }
 
+.row-footer input{
+    background-color: var(--primary-color);
+    opacity: 49%;
+}
+
 
 hr{
     background: var(--gray-color);
@@ -353,3 +362,35 @@ hr{
     display: flex;
     justify-content: end;
 }
+
+
+
+/* services */
+
+.row-services{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-around;
+}
+
+.list-services{
+    padding: 5px 32px;
+    background-color:#F0F0FC;
+    border-radius: 24px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.list-services.active{
+    padding: 5px 32px;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+.itemBox.hide{
+    display: none;
+}
+
