@@ -1,0 +1,49 @@
+@media screen and (max-width: 768px) {
+.header img{
+    margin-top: 50px;
+}
+
+
+.services .title{
+    text-align: center;
+}
+
+.productivity .col-5{
+    padding: 25px;
+}
+
+.footer-bottom .logo{
+    text-align: center;
+}
+
+.footer-bottom .setting{
+    display: 100%;
+}
+
+.footer-bottom .copyright{
+    justify-content: center;
+}
+
+}
+
+@media screen and (max-width: 992px) {
+    .header img{
+        margin-top: 50px;
+    }
+    
+        .services .title{
+        text-align: center;
+    }
+    
+
+    
+    .footer-bottom .setting{
+        display: 100%;
+    }
+    
+    .footer-bottom .copyright{
+        justify-content: center;
+        margin-top: 25px;
+    }
+    
+    }

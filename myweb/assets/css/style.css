@@ -34,14 +34,27 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .col-6{
     flex-basis: 50%;
 }
 
+.col-5{
+    flex-basis: 40%;
+    min-width: 400px;
+    padding: 50px;
+}
+
+.col-4{
+    flex-basis: 33.3%;
+    min-width: 350px;
+}
+
 .col-3{
     flex-basis: 25%;
+    min-width: 300px;
 }
 
 .btn{
@@ -143,11 +156,21 @@ ul li a.active{
 
 }
 
+.title{
+    font-weight: 600;
+}
+
+.description{
+    color: var(--gray-color);
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
 
 /* header */
 
 .header {
-    padding-top: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .header h1{
@@ -155,8 +178,178 @@ ul li a.active{
     font-weight: 600;
 }
 
-.header p{
+
+/* services */
+
+.services{
+    padding-top: 30px;
+    background: lightsteelblue;
+}
+
+.row-services{
+    margin-top: 50px;
+}
+
+.card{
+    border-radius: 12px;
+    padding: 20px 20px 30px 20px;
+    margin: 0 5px 50px 5px;
+    background: var(--white-color);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title-card-header h4{
+    font-weight: 600;
+}
+.title-card-header p{
+    font-size: 11px;
     color: var(--gray-color);
+}
+
+.card-body img{
+    border-radius: 12px;
+    width: 250px;
+    height: 150px;
+}
+
+.card-footer{
     margin-top: 10px;
-    margin-bottom: 50px;
+}
+
+.card-footer h4{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.icon-star{
+    margin: 2px 0;
+}
+
+.icon-star i{
+    color: #FFBF47;
+}
+
+.icon-star span{
+    color: var(--gray-color);
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.price p{
+    color: var(--gray-color);
+}
+
+.price span{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* productivity */
+
+.productivity{
+    padding-top: 80px;
+    padding-bottom: 80px;;
+}
+
+
+.productivity img{
+    border-radius: 12px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(57, 57, 216);
+    padding-top: 80px;
+}
+
+footer li{
+    list-style: none;
+    color: var(--gray-color);
+    padding: 10px 0;
+}
+
+footer h4{
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+footer p{
+    color: var(--gray-color);
+}
+
+footer input{
+    width: 100%;
+    border-radius: 12px;
+    height: 48px;
+    padding: 0 25px;
+    margin: 15px 0;
+    border: none;
+}
+
+footer button{
+    width: 100%;
+    border-radius: 12px;
+    height: 48px;
+    border: none;
+    background: var(--primary-color);
+}
+
+footer button a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.row-footer{
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 50px;
+}
+
+
+hr{
+    background: var(--gray-color);
+}
+
+.footer-bottom{
+    padding: 25px 0;
+    justify-content: space-between;
+}
+
+.footer-bottom .logo{
+    color: var(--white-color);
+}
+
+.footer-bottom .setting{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.setting li{
+    margin-right: 15px;
+}
+
+.copyright{
+    color: var(--gray-color);
+    display: flex;
+    justify-content: end;
 }
