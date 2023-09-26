@@ -21,7 +21,7 @@
                     <div class="nav-menu">
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="services.html" class="active">Service</a></li>
+                            <li><a href="services.html">Service</a></li>
                             <li><a href="work.html">How it Works</a></li>
                         </ul>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="list-services" data-filter="business">Bussines</div>
             </div>
             <div class="row row-services">
-                <div class="col-3 itemBox" data-item="programming">
+                <div class="col-3 itemBox" data-item="programming" onclick="window.location.href = 'detail-page.html' ">
                     <div class="card">
                         <div class="card-header">
                             <img src="/myweb/assets/img/img-card-header.jpg" alt="">
@@ -463,32 +463,6 @@
         </div>
     </footer>
 
-
-    <script>
-        let list =  document.querySelectorAll('.list-services');
-        let itemBox = document.querySelectorAll('.itemBox');
-
-        for (let i = 0; i < list.length; i++) {
-            list[i].addEventListener('click',function(){
-                for(let j = 0; j < list.length; j++){
-                    list[j].classList.remove('active');
-                }
-                this.classList.add('active');
-
-                let dataFilter = this.getAttribute('data-filter');
-
-                for(let k = 0; k<itemBox.length; k++){
-                    itemBox[k].classList.remove('active');
-                    itemBox[k].classList.add('hide');
-
-                    if(itemBox[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
-                        itemBox[k].classList.remove('hide');
-                        itemBox[k].classList.add('active');
-                    }
-                }
-            })
-            
-        }
-    </script>
+    <script src="/myweb/assets/js/script.js"></script>
 </body>
 </html>

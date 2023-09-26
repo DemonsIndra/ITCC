@@ -37,6 +37,10 @@ header{
     flex-wrap: wrap;
 }
 
+.col-8{
+    flex-basis: 66.6%;
+}
+
 .col-6{
     flex-basis: 50%;
 }
