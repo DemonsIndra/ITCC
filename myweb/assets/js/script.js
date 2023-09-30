@@ -31,3 +31,35 @@ for (let i = 0; i < list.length; i++) {
     })
     
 }
+
+let listcontent =  document.querySelectorAll('.list-content');
+let itemContent = document.querySelectorAll('.itemContent');
+
+for (let i = 0; i < listcontent.length; i++) {
+    listcontent[i].addEventListener('click', function() {
+        // Hapus class 'active' dari semua elemen dengan class 'list-content'
+        for (let j = 0; j < listcontent.length; j++) {
+            listcontent[j].classList.remove('active');
+        }
+        // Tambahkan class 'active' ke elemen yang diklik
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-filter');
+
+        for (let k = 0; k < itemContent.length; k++) {
+            // Sembunyikan semua elemen '.itemContent' kecuali yang sesuai dengan data-filter yang terkait
+            if (itemContent[k].getAttribute('data-item') == dataFilter) {
+                itemContent[k].classList.remove('hide');
+                itemContent[k].classList.add('active');
+            } else {
+                itemContent[k].classList.add('hide');
+                itemContent[k].classList.remove('active');
+            }
+        }
+    });
+}
+
+// Atur elemen pertama dengan class 'list-content' sebagai aktif secara default
+listcontent[0].click(); // Ini akan mensimulasikan klik pada elemen pertama
+
+
